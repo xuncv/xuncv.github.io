@@ -16,7 +16,8 @@
 
 <body>
     <nav>
-      <a href="https://www.ninecmd.com">NINE的博客</a>
+        <a href="https://github.com/xuncv/xuncv.github.io/issues/new">问题反馈</a>
+        <a href="https://www.ninecmd.com">NINE的博客</a>
     </nav>
     <!-- 定义加载时候的动作 -->
     <div id="app">加载中...</div>
@@ -38,6 +39,21 @@
             subMaxLevel: 2
         }
     </script>
+<!--     <script>
+        window.$docsify = {
+          copyCode: {
+            buttonText: {
+              '/'      : '点击复制'
+            },
+            errorText: {
+              '/': '错误',
+            },
+            successText: {
+              '/'      : '已复制'
+            }
+          }
+        }
+    </script> -->
     <script>
         // 搜索配置
         window.$docsify = {
@@ -46,10 +62,24 @@
                 paths: auto,
                 placeholder: '搜索',
                 noData: '找不到结果',
-                depth: 4,
+                depth: 5,
                 hideOtherSidebarContent: false,
                 namespace: 'opencv_aardio',
-            }
+            },
+            count:{
+                countable: true,
+                position: 'top',
+                margin: '10px',
+                float: 'right',
+                fontsize:'0.9em',
+                color:'rgb(90,90,90)',
+                language:'chinese',
+                localization: {
+                  words: "",
+                  minute: ""
+                },
+                isExpected: true
+              },
         }
     </script>
     <!-- docsify的js依赖 -->
@@ -64,6 +94,7 @@
     <script src="//cdn.jsdelivr.net/gh/xuncv/jsdelivr/prism-aardio.js"></script>
     <!-- 允许代码复制 -->
     <script src="//cdn.jsdelivr.net/npm/docsify-copy-code/dist/docsify-copy-code.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/docsify-count@latest/dist/countable.min.js"></script>
 </body>
 
 </html>
